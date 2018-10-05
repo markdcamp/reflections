@@ -1,0 +1,164 @@
+cmnd shift h for home direcorty
+
+
+Automaticlly Compare Files
+
+	Diff (difference)
+
+
+applemarkcamp ~ $ cd Downloads/
+applemarkcamp Downloads $ diff -u /Users/applemarkcamp/Downloads/game_new.js /Users/applemarkcamp/Downloads/game_old.js 
+
+
+
+
+
+Launch Sublime text from the Terminal = 
+
+Marks-MacBook-Pro-4:~ applemarkcamp$ subl
+
+launch and create a new text file
+
+Marks-MacBook-Pro-4:~ applemarkcamp$ subl <file name>
+
+
+
+
+pwd # print working directory - shows what directory you are in
+ls  # list the files in this directory
+
+
+
+Git command review
+Compare two commits, printing each line that is present in one commit but not the other.
+
+git diff will do this. It takes two arguments - the two commit ids to compare. 
+
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+
+git clone will do this. It takes one argument - the url of the repository to copy. 
+
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+
+git checkout will do this. It takes one argument - the commit ID to restore. 
+
+
+Show the commits made in this repository, starting with the most recent.
+
+git log will do this. It doesn't take any arguments.
+
+
+
+Cloning a Repository
+To clone a repository, run git clone followed by a space and the repository URL.
+
+Asteroids URL
+Use the following url to clone the Asteroids repository: https://github.com/udacity/asteroids.git
+
+Exiting git log
+To stop viewing git log output, press q (which stands for quit).
+
+Getting Colored Output
+To get colored diff output, run git config --global color.ui auto
+
+Copying and Pasting from the Command Line
+To complete this quiz, you'll want to copy and paste some commit ids.
+
+Windows
+To copy and paste within Git Bash, follow the instructions on this page.
+
+Mac
+To copy and paste within the terminal on Mac, use Cmd+C and Cmd+V
+
+Ubuntu
+To copy and paste within the terminal on Ubuntu, use Ctrl+Shift+C and Ctrl+Shift+V.
+
+Using git log and git diff
+As a reminder, running git log will show a list of the recent commits with information about them, including commit IDs. Running git diff followed by two commit IDs will compare the two versions of the code in those commits. If you need a refresher, you may want to rewatch this video.
+
+
+
+
+
+
+Behavior of git clone
+If someone else gives you the location of their directory or repository, you can copy or clone it to your own computer.
+
+This is true for both copying a directory and cloning a repository.
+
+As you saw in the previous lesson, if you have a URL to a repository, you can copy it to your computer using git clone.
+
+For copying a directory, you weren't expected to know this, but it is possible to copy a directory from one computer to another using the command scp, which stands for "secure copy". The name was chosen because the scp command lets you securely copy a directory from one computer to another. 
+
+
+The history of changes to the directory or repository is copied.
+
+This is true for cloning a repository, but not for copying a directory. The main reason to use git clone rather than copying the directory is because git clone will also copy the commit history of the repository. However, copying can be done on any directory, whereas git clone only works on a Git repository. 
+
+
+If you make changes to the copied directory or cloned repository, the original will not change.
+
+This is true for both copying a directory and cloning a repository. In both cases, you're making a copy that you can alter without changing the original. 
+
+
+The state of every file in the directory or repository is copied.
+
+This is true for both copying a directory and cloning a repository. In both cases, all the files are copied.
+
+
+
+
+WHy Reflect:
+https://sites.google.com/site/reflection4learning/why-reflect
+
+How Critical Reflection Triggers Transformative Learning
+http://184.182.233.150/rid=1LW06D9V6-26428MK-1Z64/Mezirow's%20chapter,%20How%20Critical%20Refletion%20Triggers%20TL.pdf
+
+
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+	view a diff allowed me to view lines of code from each file side by side making it easy to find the bug that was introduced.
+
+
+How coul dhaving easy access to the entire history of a file make you a more efficient programmer in the long term?
+	having a history of a file will make it easy to run diffs if you're looking for a bug.  Or to follow the history of how the file has grown and changed over time.  
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Goolge Docs does?
+	Manually
+		Pros
+			Can commit whenver you want
+		Cons
+			May forget to commit
+
+	Automatically
+		Pros
+			commits occur automatically
+
+		Cons
+			Commits may be too small
+			Commits may occur and inappropriate times
+			Commits may be too big
+
+WHy do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file seperately
+	Because google docs is built for modifying one file at a time that typically are not dependentant on other files.  WHhile Git is built for modifying multiple files which may or may not depend on each other. 
+
+How can you use the connads git log and git diff to vie the history of files
+	git log will log the change history of a file
+	git diff will allow you to see the differences between commits
+
+How might using version control make you more confident to make changes that could break something?
+	Version contol allow you to check out commits to find where a bug was introduced.  allows exploration of code without the fear of breaking the entire project.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+	I want a general understanding of what Git does and how it is used.
+
+
+
+
+
+fa4c6bade4970c282b3870ad16f1bde8164663a9
+
+
+
+
